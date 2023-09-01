@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Consolas</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>ez converter</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: #2c2c2c;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="convertButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>151</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+ background: rgb(0, 255, 255);
+color: rgb(52, 52, 52);
+ border: 2px solid rgb(0, 255, 255);
+border-radius: 19px;
+padding-bottom: 1px;
+}
+QPushButton:hover {
+color: rgb(0, 255, 255);
+background: rgb(52, 52, 52);
+border: 2px solid rgb(0, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>convert</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>ez converter</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="selected_files_list">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>70</y>
+      <width>261</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid rgb(0, 255, 255);
+color: rgb(0, 255, 255);
+border-radius: 30;
+padding-top: 26;
+padding-bottom: 22;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="configure">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>340</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+ background: rgb(0, 255, 255);
+color: rgb(52, 52, 52);
+ border: 2px solid rgb(0, 255, 255);
+border-radius: 15px;
+padding-bottom: 1px;
+}
+QPushButton:hover {
+color: rgb(0, 255, 255);
+background: rgb(52, 52, 52);
+border: 2px solid rgb(0, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>select files...</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_converTo">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>convert to:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="selected_files_list_label">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>78</y>
+      <width>150</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>selected files:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="type">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>110</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid rgb(0, 255, 255);
+color: rgb(0, 255, 255);
+border-radius: 4;
+padding-left: 8;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>.png</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>.jpg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>.jpeg</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="languageSwitch">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>340</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+ background: rgb(0, 255, 255);
+color: rgb(52, 52, 52);
+ border: 2px solid rgb(0, 255, 255);
+border-radius: 15px;
+padding-bottom: 1px;
+}
+QPushButton:hover {
+color: rgb(0, 255, 255);
+background: rgb(52, 52, 52);
+border: 2px solid rgb(0, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>мова</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
